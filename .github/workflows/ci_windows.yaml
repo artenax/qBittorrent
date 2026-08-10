@@ -132,10 +132,8 @@ jobs:
       - name: Install libtorrent
         run: |
           git clone `
-            --branch v${{ matrix.libtorrent.version }} `
-            --depth 1 `
             --recurse-submodules `
-            https://github.com/arvidn/libtorrent.git `
+            https://github.com/artenax/libtorrent.git `
             ${{ env.libtorrent_path }}
           cd ${{ env.libtorrent_path }}
           $env:CFLAGS+=" /guard:cf"
