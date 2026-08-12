@@ -99,7 +99,7 @@ jobs:
           CXXFLAGS="$CXXFLAGS ${{ env.harden_flags }}" \
           cmake \
             -B build \
-            -G Ninja \
+            -G "Ninja" \
             -DBUILD_SHARED_LIBS=OFF \
             -DCMAKE_BUILD_TYPE=RelWithDebInfo \
             -DCMAKE_CXX_STANDARD=20 \
